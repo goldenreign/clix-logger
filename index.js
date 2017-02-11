@@ -63,7 +63,7 @@ module.exports = function ( options ) {
       var args = [ ].slice.call( arguments );
 
       if ( opts.appendTime && !entry.noAppendTime ) {
-        args.unshift( '[' + getTime() + ']' );
+        args.unshift( '[' + getTime(opts.timeFormat) + ']' );
       }
 
       if ( entry.token ) {
